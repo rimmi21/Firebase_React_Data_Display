@@ -1,5 +1,4 @@
 import React from 'react';
-
 import * as firebase from 'firebase';
 import {Table} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,7 +28,7 @@ const post = rootRef.child('Countries').orderByKey();
            });
             console.log(post);
            const postList =(
-                <Table striped bordered hover variant="dark">
+                <Table striped bordered hover style={{width:"50%"}} align="center" >
                 <thead>
                   <tr>
                     <th>Country</th>

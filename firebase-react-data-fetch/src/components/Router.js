@@ -1,12 +1,12 @@
-import React from 'react';
-import {Route,Switch,BrowserRouter}  from 'react-router-dom';
-import TableData from './TableData';
+import React from "react";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import TableData from "./TableData";
 
-const Router=()=>(
-    <BrowserRouter>
+const Router = () => (
+  <BrowserRouter>
     <Switch>
-     <Route path="/table" exact component={TableData}/>
+      <Route path="/table" exact component={TableData} />
     </Switch>
-    </BrowserRouter>
+  </BrowserRouter>
 );
 export default Router;
